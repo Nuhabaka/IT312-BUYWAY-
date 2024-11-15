@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styleSheet.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+      
+            <img id="logo" src="webLogo.png" alt="logo">
+            <img id="name-img" src="name.png" alt="Website Name">
+       
+            <div id="navigation">
+                <form class="search-bar" action="search_results.html" method="get">
+                    <input type="text" name="search" placeholder="Search...">
+                    <input type="submit" value="Search">
+                </form>
+
+            </div>
+
+            <blockquote>
+                Our vision: to build a thriving marketplace where creators and entrepreneurs can bring their unique
+                products to a global audience.
+            </blockquote>
+        </div>
+
+    </header>
+
+    <div id="sidebar" class="float">
+        <div id="user-seller-sidebar">
+            <div id="pic-div">
+                <div id="user-sidebar">
+                    <img src="profile.png" alt="User Profile">
+                    <a href="userforder.html">user</a>
+                </div>
+                <div id="Seller-sidebar">
+                    <img src="profile.png" alt="Seller Profile">
+                    <a href="sellerDashboard.html">seller</a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-container">
+            <dl >
+                <dt><a href="usercart.html">&nbsp;&nbsp;cart page</a></dt>
+                <dt ><a href="clothes.html">&nbsp;&nbsp;clothes</a></dt>
+                <dt ><a href="beauty.html">&nbsp;&nbsp;beauty</a></dt>
+                <dt ><a href="electronics.html">&nbsp;&nbsp;electronics</a></dt>
+                       
+            </dl>
+            <button id="theme-toggle" onclick="toggleTheme()">Customize</button>
+            
+        </div>
+        <div id="current-date-container">
+            <p id="current-date"></p> <!-- This is where the date will be inserted -->
+        </div>
+        <aside id="reviews">
+            <h2>Reviews</h2>
+        
+            <!-- Review 1 -->
+            <div class="review" data-id="1">
+                <div class="reviewheader">
+                    <img class="pfp" src="pfp1.jpg" alt="Profile of Sarah Doe">
+                    <div class="review-text">
+                        <span>"I Love it!"</span><br>
+                        <span class="stars">★★★★</span>
+                    </div>
+                </div>
+                <div class="details"></div> <!-- Details container (will be filled dynamically) -->
+            </div>
+        
+            <!-- Review 2 -->
+            <div class="review" data-id="2">
+                <div class="reviewheader">
+                    <img class="pfp" src="pfp2.jpeg" alt="Profile of John Smith">
+                    <div class="review-text">
+                        <span>"Breakable"</span><br>
+                        <span class="stars">★★✩✩</span>
+                    </div>
+                </div>
+                <div class="details"></div>
+            </div>
+        
+            <!-- Review 3 -->
+            <div class="review" data-id="3">
+                <div class="reviewheader">
+                    <img class="pfp" src="pfp3.jpg" alt="Profile of Nuha Baka">
+                    <div class="review-text">
+                        <span>"Nice smell"</span><br>
+                        <span class="stars">★★★✩</span>
+                    </div>
+                </div>
+                <div class="details"></div>
+            </div>
+        </aside>
+        
+     
+             </div>
+         </div>
+        
+        </div>
+    </div>
+
+    <main class="main-css">
+        <div ID="great-deals">
+          <br> <pre><h1>                              GREAT DEALS!</h1></pre>
+          
+
+        </div>
+        <section class="offers">
+            <div class="offer" id="visible"> <!-- 1st offer -->
+                <img src="offer1.png" alt="Pro Gaming Controller">
+                <h3>Pro Gaming Controller</h3>
+                <p>Take your gaming to the next level with a high-performance controller featuring precision control and ergonomic design.</p>
+                <p class="old-price"><span>$75</span></p>
+                <p class="new-price"><span>$55</span></p>
+                <button>Add to cart</button>
+            </div>
+        
+            <div class="offer" id="visible">
+                <img src="offer2.png" alt="Lipstick">
+                <h3>Matte Finish Lipstick</h3>
+                <p>Achieve a bold, long-lasting look with this high-pigment matte lipstick. Available in a variety of shades.</p>
+                <p class="old-price"><span>$15</span></p>
+                <p class="new-price"><span>$10</span></p>
+                <button>Add to cart</button>
+            </div>
+        
+            <div class="offer" id="visible">
+                <img src="offer3.png" alt="Women's Pink Pajamas">
+                <h3>Women's Pink Pajamas</h3>
+                <p>Soft, stylish, and cozy pajamas designed for comfort and relaxation. Perfect for a good night's sleep.</p>
+                <p class="old-price"><span>$40</span></p>
+                <p class="new-price"><span>$28</span></p>
+                <button>Add to cart</button>
+            </div>
+        
+            <!-- Hidden Offers (will show when "More" is clicked) -->
+            <div class="offer extra-offer">
+                <img src="offer4.png" alt="Women's Perfume">
+                <h3>Elegant Women's Perfume</h3>
+                <p>Indulge in a long-lasting fragrance that blends floral and woody notes for a captivating scent. Perfect for special occasions!</p>
+                <p class="old-price"><span>$80</span></p>
+                <p class="new-price"><span>$55</span></p>
+                <button>Add to cart</button>
+            </div>
+        
+            <div class="offer extra-offer">
+                <img src="offer5.png" alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <p>Experience top-quality sound with noise cancellation technology. Available in various colors, with a colorful beaming ring.</p>
+                <p class="old-price"><span>$120</span></p>
+                <p class="new-price"><span>$85</span></p>
+                <button>Add to cart</button>
+            </div>
+        
+            <div class="offer extra-offer">
+                <img src="offer6.png" alt="Men's T-Shirt">
+                <h3>Men's Casual T-Shirt</h3>
+                <p>Comfortable and trendy, this t-shirt is perfect for daily wear. Made from high-quality cotton for durability and comfort.</p>
+                <p class="old-price"><span>$25</span></p>
+                <p class="new-price"><span>$18</span></p>
+                <button>Add to cart</button>
+            </div>
+        
+        </section>
+        <a href="javascript:void(0);" id="more-offers" onclick="toggleOffers()">More Offers</a>
+        <!-- end of offers section -->
+
+   
+        <div ID="categories">
+            <br><h1>CATEGORIES</h1>
+            <article class="categories">
+                <div class="category"> <!-- 1st category -->
+                    <a href="beauty.html"> <div id="Categorycard"> <img src="BeautySection.png" alt="BeautySection"></div>
+                   
+                    <h3>Beauty Section</h3></a>
+                    
+                </div>
+                <div class="category">
+                    <a href="clothes.html"> <div id="Categorycard">   <img src="ClothesSection.png" alt="ClothesSection"></div>
+                   
+                    <h3>Clothes Section</h3></a>
+                    
+                </div>
+                <div class="category">
+                    <a href="electronics.html">   <div id="Categorycard"> <img src="ElectronicsSection.png" alt="ElectronicsSection"></div>
+                   
+                    <h3>Electronics Section</h3>
+                </a>
+                </div>
+               
+    
+            </article><!-- end of categories article -->
+    
+            
+  
+          </div>
+    </main>
+
+
+    <footer>
+
+        <div id="footer">
+            <div class="organize">
+                <p></p>
+            </div>
+
+            <div id="contact-info">
+                <h4>contact info</h4>
+                <ul>
+                    <li><a href="http://">0587465783</a></li>
+                    <li><a href="http://">05823994891</a></li>
+                    <li id="email"><a href="mailto:">buyway@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="organize">
+                <p></p>
+                <div class="seperation-line"></div>
+            </div>
+            <div id="social-accounts">
+                <h4>social accounts</h4>
+                <div id="account-links">
+                    <div id="social"> <a href="http://"><img src="instagram.png" alt="instagarm">instagram</a></div>
+                    <div id="social"><a href="http://"><img src="x.png" alt="x">x</a></div>
+                    <div id="social"> <a href="http://"><img src="tiktok.png" alt="tiktok">tiktok</a></div>
+                    <div id="bottom"></div>
+                </div>
+            </div>
+            <div class="organize" id="right">
+                <p></p>
+            </div>
+        </div>
+
+
+        <div class="footer-content">
+            <span>&copy; 2024 BUYWAY MARKETPLACE</span>
+ 
+            <span>All Rights Reserved</span>
+        </div>
+
+
+
+
+    </footer>
+
+</body>
+
+</html>
